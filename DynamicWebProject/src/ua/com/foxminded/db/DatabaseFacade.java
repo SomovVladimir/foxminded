@@ -17,7 +17,7 @@ public class DatabaseFacade {
 		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres", "postgres", "123456789")){
 			System.out.println("Java JDBC PostgreSQL Example");
 			
-			System.out.println("Connected to PostgreSQL database!");
+			System.out.println("Connected to PostgreSQL database!!!");
 			Statement statement = connection.createStatement();
 			
 			ResultSet resultSet = statement.executeQuery("SELECT * FROM books.books");
